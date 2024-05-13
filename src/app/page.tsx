@@ -3,6 +3,7 @@ import {
 	Card,
 	CardContent,
 	CardDescription,
+	CardFooter,
 	CardHeader,
 	CardTitle,
 } from '@/components/ui/card'
@@ -10,7 +11,7 @@ import { cn } from '@/lib/utils'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import { jost, mukta } from './fonts'
-import { ArrowRight, Bone, MoveRight } from 'lucide-react'
+import { ArrowRight, Bone, HandHeart, MoveRight } from 'lucide-react'
 import {
 	BaseSectionGroup,
 	BaseSectionHeader,
@@ -256,6 +257,158 @@ const HomePage: NextPage = () => {
 						/>
 					</li>
 				</ul>
+			</BaseSectionWrapper>
+
+			<BaseSectionWrapper className='bg-gray-200'>
+				<BaseSectionHeader>
+					<BaseSectionGroup>Get Involved</BaseSectionGroup>
+					<BaseSectionTitle>Make a Difference Today</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						Empower change. Volunteer, donate, foster. Join our community today.
+					</BaseSectionSubtitle>
+
+					<ul className='flex flex-col gap-5'>
+						<li>
+							<Card className='p-6'>
+								<CardContent className='flex flex-col gap-7'>
+									<div className='flex flex-col gap-2'>
+										<div>
+											<div>
+												<HandHeart size={64} />
+											</div>
+											<h4 className='text-lg font-semibold'>
+												Join Our Volunteer Team
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Make a hands-on difference by joining our volunteer
+												team. From helping with animal care to assisting with
+												adoption events, there are many ways to lend a hand and
+												make a positive impact. Join us today!
+											</p>
+										</div>
+									</div>
+
+									<div>
+										<Button variant='outline' className='flex gap-2'>
+											Learn More{' '}
+											<div>
+												<ArrowRight size={14} />
+											</div>
+										</Button>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+
+						<li>
+							<Card className='p-6'>
+								<CardContent className='flex flex-col gap-7'>
+									<div className='flex flex-col gap-2'>
+										<div>
+											<div>
+												<HandHeart size={64} />
+											</div>
+											<h4 className='text-lg font-semibold'>
+												Join Our Volunteer Team
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Make a hands-on difference by joining our volunteer
+												team. From helping with animal care to assisting with
+												adoption events, there are many ways to lend a hand and
+												make a positive impact. Join us today!
+											</p>
+										</div>
+									</div>
+
+									<div>
+										<Button variant='outline' className='flex gap-2'>
+											Learn More{' '}
+											<div>
+												<ArrowRight size={14} />
+											</div>
+										</Button>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+
+						<li>
+							<Card className='p-6'>
+								<CardContent className='flex flex-col gap-7'>
+									<div className='flex flex-col gap-2'>
+										<div>
+											<div>
+												<HandHeart size={64} />
+											</div>
+											<h4 className='text-lg font-semibold'>
+												Join Our Volunteer Team
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Make a hands-on difference by joining our volunteer
+												team. From helping with animal care to assisting with
+												adoption events, there are many ways to lend a hand and
+												make a positive impact. Join us today!
+											</p>
+										</div>
+									</div>
+
+									<div>
+										<Button variant='outline' className='flex gap-2'>
+											Learn More{' '}
+											<div>
+												<ArrowRight size={14} />
+											</div>
+										</Button>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+
+						<li>
+							<Card className='p-6'>
+								<CardContent className='flex flex-col gap-7'>
+									<div className='flex flex-col gap-2'>
+										<div>
+											<div>
+												<HandHeart size={64} />
+											</div>
+											<h4 className='text-lg font-semibold'>
+												Join Our Volunteer Team
+											</h4>
+										</div>
+
+										<div>
+											<p>
+												Make a hands-on difference by joining our volunteer
+												team. From helping with animal care to assisting with
+												adoption events, there are many ways to lend a hand and
+												make a positive impact. Join us today!
+											</p>
+										</div>
+									</div>
+
+									<div>
+										<Button variant='outline' className='flex gap-2'>
+											Learn More{' '}
+											<div>
+												<ArrowRight size={14} />
+											</div>
+										</Button>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+					</ul>
+				</BaseSectionHeader>
 			</BaseSectionWrapper>
 		</div>
 	)
