@@ -32,11 +32,11 @@ const HomePage: NextPage = () => {
 
 				{/* TODO Fix this image, must be close to dog */}
 				<Image
-					src='/dog.webp'
+					src='/happy-black-dog-on-a-bench.webp'
 					width={272}
 					height={300}
 					alt='Happy black dog on a bench'
-					className='rounded'
+					className='rounded-2xl'
 				/>
 			</section>
 
@@ -189,6 +189,28 @@ const HomePage: NextPage = () => {
 						</div>
 					</Button>
 				</div>
+
+				<ul className='flex flex-col gap-5'>
+					<li>
+						<Image
+							src='/gray-and-white-pitbull.webp'
+							width={272}
+							height={300}
+							alt='Gray and White Pitbull'
+							className='rounded-2xl'
+						/>
+					</li>
+
+					<li>
+						<Image
+							src='/orange-tabby-kitten.webp'
+							width={272}
+							height={300}
+							alt='Orange Tabby Kitten'
+							className='rounded-2xl'
+						/>
+					</li>
+				</ul>
 			</section>
 		</div>
 	)
