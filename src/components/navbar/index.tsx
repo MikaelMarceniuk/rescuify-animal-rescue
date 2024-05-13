@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
 			<AccordionItem value='navbar'>
 				<div className='flex items-center justify-between px-4'>
 					<div className='flex items-center gap-1 '>
+						{/* TODO Search a better bone icon */}
 						<Bone size={24} className='text-green-800' />
 						<h1 className='text-3xl font-semibold text-green-800'>Rescuify</h1>
 					</div>
