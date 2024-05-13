@@ -4,7 +4,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '../ui/accordion'
+} from './shadcui/accordion'
 
 const Navbar: React.FC = () => {
 	return (
@@ -20,6 +20,7 @@ const Navbar: React.FC = () => {
 					</div>
 
 					<AccordionTrigger>
+						{/* TODO Make Hamburguer and X animation */}
 						<div className='flex h-11 w-11 flex-col items-center justify-center gap-2 rounded active:scale-90 active:bg-green-200'>
 							<div className='h-[2px] w-6 bg-black' />
 							<div className='h-[2px] w-6 bg-black' />
@@ -28,6 +29,7 @@ const Navbar: React.FC = () => {
 				</div>
 
 				<AccordionContent>
+					{/* TODO Add Nav tag */}
 					<ul className='flex flex-col gap-4 px-4 text-base font-medium text-green-800'>
 						<li>About</li>
 						<li>Adopt</li>

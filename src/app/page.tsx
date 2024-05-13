@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/shadcui/button'
 import {
 	Card,
 	CardContent,
@@ -6,7 +6,7 @@ import {
 	CardFooter,
 	CardHeader,
 	CardTitle,
-} from '@/components/ui/card'
+} from '@/components/shadcui/card'
 import { cn } from '@/lib/utils'
 import { NextPage } from 'next'
 import Image from 'next/image'
@@ -27,7 +27,7 @@ import {
 	BaseSectionTitle,
 	BaseSectionWrapper,
 } from '@/components/baseSection'
-import { Separator } from '@/components/ui/separator'
+import { Separator } from '@/components/shadcui/separator'
 
 const HomePage: NextPage = () => {
 	return (

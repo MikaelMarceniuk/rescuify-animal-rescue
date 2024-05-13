@@ -2,6 +2,7 @@ import type { Metadata, NextPage } from 'next'
 import './globals.css'
 import Navbar from '@/components/navbar'
 import { jost } from './fonts'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -18,6 +19,7 @@ const RootLayout: NextPage<IRootLayoutProps> = ({ children }) => {
 			<body className={jost.className}>
 				<Navbar />
 				{children}
+				<Footer />
 			</body>
 		</html>
 	)
