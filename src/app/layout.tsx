@@ -1,9 +1,7 @@
 import type { Metadata, NextPage } from 'next'
 import './globals.css'
-import { Jost } from 'next/font/google'
 import Navbar from '@/components/navbar'
-
-const jost = Jost({ subsets: ['latin'] })
+import { jost } from './fonts'
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
