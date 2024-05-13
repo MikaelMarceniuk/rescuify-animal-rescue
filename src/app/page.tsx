@@ -212,6 +212,57 @@ const HomePage: NextPage = () => {
 					</li>
 				</ul>
 			</section>
+
+			<section
+				className={cn('flex flex-col gap-10 p-6 pb-10', mukta.className)}
+			>
+				<div className='flex flex-col gap-3'>
+					<p className='text-lg font-bold tracking-widest text-gray-500'>
+						OUR PROGRAMS
+					</p>
+					<h3 className='text-2.8xl font-medium leading-8 text-gray-600'>
+						Empowering Animal Welfare
+					</h3>
+					<h4 className={cn('text-lg text-gray-600', jost.className)}>
+						We're committed to implementing innovative programs that address the
+						diverse needs of animals in our community. From low-cost spay and
+						neuter clinics to educational outreach initiatives, our programs are
+						designed to make a lasting impact on animal welfare. Explore how our
+						programs are revolutionizing the way we care for and advocate on
+						behalf of animals in need. Join us in our mission to create a world
+						where every animal is valued and protected.
+					</h4>
+
+					<Button>
+						Get Involved{' '}
+						<div>
+							<ArrowRight size={12} />
+						</div>
+					</Button>
+				</div>
+
+				<ul className='flex flex-col gap-5'>
+					<li>
+						<Image
+							src='/tabby-cat.webp'
+							width={272}
+							height={300}
+							alt='Tabby cat'
+							className='rounded-2xl'
+						/>
+					</li>
+
+					<li>
+						<Image
+							src='/golden-and-white-dog.webp'
+							width={272}
+							height={300}
+							alt='Golden and White dog'
+							className='rounded-2xl'
+						/>
+					</li>
+				</ul>
+			</section>
 		</div>
 	)
 }
