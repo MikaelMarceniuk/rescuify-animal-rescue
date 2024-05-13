@@ -11,7 +11,15 @@ import { cn } from '@/lib/utils'
 import { NextPage } from 'next'
 import Image from 'next/image'
 import { jost, mukta } from './fonts'
-import { ArrowRight, Bone, HandHeart, MoveRight } from 'lucide-react'
+import {
+	ArrowRight,
+	Bone,
+	CalendarDays,
+	Clock,
+	HandHeart,
+	MapPin,
+	MoveRight,
+} from 'lucide-react'
 import {
 	BaseSectionGroup,
 	BaseSectionHeader,
@@ -19,6 +27,7 @@ import {
 	BaseSectionTitle,
 	BaseSectionWrapper,
 } from '@/components/baseSection'
+import { Separator } from '@/components/ui/separator'
 
 const HomePage: NextPage = () => {
 	return (
@@ -295,7 +304,7 @@ const HomePage: NextPage = () => {
 										<Button variant='outline' className='flex gap-2'>
 											Learn More{' '}
 											<div>
-												<ArrowRight size={14} />
+												<ArrowRight size={12} />
 											</div>
 										</Button>
 									</div>
@@ -330,7 +339,7 @@ const HomePage: NextPage = () => {
 										<Button variant='outline' className='flex gap-2'>
 											Learn More{' '}
 											<div>
-												<ArrowRight size={14} />
+												<ArrowRight size={12} />
 											</div>
 										</Button>
 									</div>
@@ -365,7 +374,7 @@ const HomePage: NextPage = () => {
 										<Button variant='outline' className='flex gap-2'>
 											Learn More{' '}
 											<div>
-												<ArrowRight size={14} />
+												<ArrowRight size={12} />
 											</div>
 										</Button>
 									</div>
@@ -400,7 +409,7 @@ const HomePage: NextPage = () => {
 										<Button variant='outline' className='flex gap-2'>
 											Learn More{' '}
 											<div>
-												<ArrowRight size={14} />
+												<ArrowRight size={12} />
 											</div>
 										</Button>
 									</div>
@@ -408,6 +417,178 @@ const HomePage: NextPage = () => {
 							</Card>
 						</li>
 					</ul>
+				</BaseSectionHeader>
+			</BaseSectionWrapper>
+
+			<BaseSectionWrapper>
+				<BaseSectionHeader>
+					<BaseSectionGroup>Upcoming Events</BaseSectionGroup>
+					<BaseSectionTitle>Discover What's Happening</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						Empower change. Volunteer, donate, foster. Join our community today.
+					</BaseSectionSubtitle>
+
+					<ul className='flex flex-col gap-5'>
+						<li className='rounded-2xl'>
+							<Card className='rounded-2xl p-0'>
+								<CardContent className='flex flex-col p-0'>
+									<div className='relative min-h-52'>
+										<Image
+											src='/small-dog-being-held.webp'
+											alt='Small dog beign held'
+											fill
+											className='rounded-tl-2xl rounded-tr-2xl'
+										/>
+									</div>
+
+									<div
+										className={cn(
+											'flex flex-col gap-4 p-8 text-gray-500',
+											jost.className,
+										)}
+									>
+										<div className='flex flex-col gap-2'>
+											<h4 className='text-lg font-semibold text-gray-800'>
+												Adoption Drive
+											</h4>
+
+											<div>
+												<div className='flex items-center gap-2'>
+													<CalendarDays size={18} />
+													<p>Saturday, March 12th</p>
+												</div>
+												<div className='flex items-center gap-2'>
+													<Clock size={18} />
+													<p>10:00 AM - 2:00 PM</p>
+												</div>
+											</div>
+										</div>
+
+										<Separator />
+
+										<div className='flex gap-2'>
+											<div className='pt-1'>
+												<MapPin size={18} />
+											</div>
+											<div>
+												<p>Rescuify Animal Shelter</p>
+												<p>123 Main Street - Anytown, USA</p>
+											</div>
+										</div>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+
+						<li className='rounded-2xl'>
+							<Card className='rounded-2xl p-0'>
+								<CardContent className='flex flex-col p-0'>
+									<div className='relative min-h-52'>
+										<Image
+											src='/mixed-dog-on-leash.webp'
+											alt='Mixed dog on leash'
+											fill
+											className='rounded-tl-2xl rounded-tr-2xl'
+										/>
+									</div>
+
+									<div
+										className={cn(
+											'flex flex-col gap-4 p-8 text-gray-500',
+											jost.className,
+										)}
+									>
+										<div className='flex flex-col gap-2'>
+											<h4 className='text-lg font-semibold text-gray-800'>
+												Adoption Drive
+											</h4>
+
+											<div>
+												<div className='flex items-center gap-2'>
+													<CalendarDays size={18} />
+													<p>Saturday, March 12th</p>
+												</div>
+												<div className='flex items-center gap-2'>
+													<Clock size={18} />
+													<p>10:00 AM - 2:00 PM</p>
+												</div>
+											</div>
+										</div>
+
+										<Separator />
+
+										<div className='flex gap-2'>
+											<div className='pt-1'>
+												<MapPin size={18} />
+											</div>
+											<div>
+												<p>Rescuify Animal Shelter</p>
+												<p>123 Main Street - Anytown, USA</p>
+											</div>
+										</div>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+
+						<li className='rounded-2xl'>
+							<Card className='rounded-2xl p-0'>
+								<CardContent className='flex flex-col p-0'>
+									<div className='relative min-h-52'>
+										<Image
+											src='/cat-being-held.webp'
+											alt='Cat being held'
+											fill
+											className='rounded-tl-2xl rounded-tr-2xl'
+										/>
+									</div>
+
+									<div
+										className={cn(
+											'flex flex-col gap-4 p-8 text-gray-500',
+											jost.className,
+										)}
+									>
+										<div className='flex flex-col gap-2'>
+											<h4 className='text-lg font-semibold text-gray-800'>
+												Adoption Drive
+											</h4>
+
+											<div>
+												<div className='flex items-center gap-2'>
+													<CalendarDays size={18} />
+													<p>Saturday, March 12th</p>
+												</div>
+												<div className='flex items-center gap-2'>
+													<Clock size={18} />
+													<p>10:00 AM - 2:00 PM</p>
+												</div>
+											</div>
+										</div>
+
+										<Separator />
+
+										<div className='flex gap-2'>
+											<div className='pt-1'>
+												<MapPin size={18} />
+											</div>
+											<div>
+												<p>Rescuify Animal Shelter</p>
+												<p>123 Main Street - Anytown, USA</p>
+											</div>
+										</div>
+									</div>
+								</CardContent>
+							</Card>
+						</li>
+					</ul>
+
+					<Button variant='outline' className='space-x-2'>
+						<p>View More Events</p>
+						<div>
+							<ArrowRight size={12} />
+						</div>
+					</Button>
 				</BaseSectionHeader>
 			</BaseSectionWrapper>
 		</div>
