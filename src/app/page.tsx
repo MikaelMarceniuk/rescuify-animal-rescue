@@ -11,24 +11,33 @@ import { NextPage } from 'next'
 import Image from 'next/image'
 import { jost, mukta } from './fonts'
 import { ArrowRight, Bone, MoveRight } from 'lucide-react'
+import {
+	BaseSectionGroup,
+	BaseSectionHeader,
+	BaseSectionSubtitle,
+	BaseSectionTitle,
+	BaseSectionWrapper,
+} from '@/components/baseSection'
 
 const HomePage: NextPage = () => {
 	return (
-		<div className='min-h-dvh '>
-			<section className='flex flex-col gap-6 p-6 pb-10'>
-				<h2 className='text-4xl font-medium text-green-800'>
-					Empower Change: <br />
-					Rescue, Rehabilitate, Rehome Together
-				</h2>
-				<div className='text-gray-600'>
-					<p>Join us in our mission to save animal lives.</p>
-					<p>Your partnership makes a difference.</p>
-				</div>
+		<div className='min-h-dvh'>
+			<BaseSectionWrapper>
+				<BaseSectionHeader>
+					<BaseSectionTitle variant='h2' as='h2'>
+						Empower Change: <br />
+						Rescue, Rehabilitate, Rehome Together
+					</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						<p>Join us in our mission to save animal lives.</p>
+						<p>Your partnership makes a difference.</p>
+					</BaseSectionSubtitle>
 
-				<div className='flex justify-between'>
-					<Button className='bg-green-800'>Get Involved</Button>
-					<Button variant='outline'>Donate Now</Button>
-				</div>
+					<div className='flex justify-between'>
+						<Button className='bg-green-800'>Get Involved</Button>
+						<Button variant='outline'>Donate Now</Button>
+					</div>
+				</BaseSectionHeader>
 
 				{/* TODO Fix this image, must be close to dog */}
 				<Image
@@ -38,26 +47,19 @@ const HomePage: NextPage = () => {
 					alt='Happy black dog on a bench'
 					className='rounded-2xl'
 				/>
-			</section>
+			</BaseSectionWrapper>
 
-			<section
-				className={cn(
-					'flex flex-col gap-10 bg-gray-200 p-6 pb-10',
-					mukta.className,
-				)}
-			>
-				<div className='flex flex-col gap-3'>
-					<p className='text-lg font-bold tracking-widest text-gray-500'>
-						STATISTICS
-					</p>
-					<h3 className='text-2.8xl font-medium leading-8 text-gray-600'>
-						Impact at a Glance
-					</h3>
-					<h4 className={cn('text-lg text-gray-600', jost.className)}>
-						See the Difference We're Making Together. Every Statistic Tells a
-						Story of Hope and Healing.
-					</h4>
-				</div>
+			<BaseSectionWrapper className='bg-gray-200'>
+				<BaseSectionHeader>
+					<BaseSectionGroup>Statistics</BaseSectionGroup>
+					<BaseSectionTitle>Impact at a Glance</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						<h4>
+							See the Difference We're Making Together. Every Statistic Tells a
+							Story of Hope and Healing.
+						</h4>
+					</BaseSectionSubtitle>
+				</BaseSectionHeader>
 
 				<ul className='flex flex-col gap-4'>
 					<li>
@@ -128,25 +130,21 @@ const HomePage: NextPage = () => {
 						</Card>
 					</li>
 				</ul>
-			</section>
+			</BaseSectionWrapper>
 
-			<section
-				className={cn('flex flex-col gap-10 p-6 pb-10', mukta.className)}
-			>
-				<div className='flex flex-col gap-3'>
-					<p className='text-lg font-bold tracking-widest text-gray-500'>
-						OUR MISSION
-					</p>
-					<h3 className='text-2.8xl font-medium leading-8 text-gray-600'>
-						Revolutionizing Animal Rescue
-					</h3>
-					<h4 className={cn('text-lg text-gray-600', jost.className)}>
-						At Rescuify, we believe in the power of compassion to transform
-						lives. Our mission is simple yet profound: to rescue, rehabilitate,
-						and rehome animals in need, giving them the second chance they
-						deserve.
-					</h4>
-				</div>
+			<BaseSectionWrapper>
+				<BaseSectionHeader>
+					<BaseSectionGroup>Our mission</BaseSectionGroup>
+					<BaseSectionTitle>Revolutionizing Animal Rescue</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						<h4>
+							At Rescuify, we believe in the power of compassion to transform
+							lives. Our mission is simple yet profound: to rescue,
+							rehabilitate, and rehome animals in need, giving them the second
+							chance they deserve.
+						</h4>
+					</BaseSectionSubtitle>
+				</BaseSectionHeader>
 
 				<ul className='flex flex-col gap-4'>
 					<li className='flex gap-3 text-green-900'>
@@ -211,27 +209,23 @@ const HomePage: NextPage = () => {
 						/>
 					</li>
 				</ul>
-			</section>
+			</BaseSectionWrapper>
 
-			<section
-				className={cn('flex flex-col gap-10 p-6 pb-10', mukta.className)}
-			>
-				<div className='flex flex-col gap-3'>
-					<p className='text-lg font-bold tracking-widest text-gray-500'>
-						OUR PROGRAMS
-					</p>
-					<h3 className='text-2.8xl font-medium leading-8 text-gray-600'>
-						Empowering Animal Welfare
-					</h3>
-					<h4 className={cn('text-lg text-gray-600', jost.className)}>
-						We're committed to implementing innovative programs that address the
-						diverse needs of animals in our community. From low-cost spay and
-						neuter clinics to educational outreach initiatives, our programs are
-						designed to make a lasting impact on animal welfare. Explore how our
-						programs are revolutionizing the way we care for and advocate on
-						behalf of animals in need. Join us in our mission to create a world
-						where every animal is valued and protected.
-					</h4>
+			<BaseSectionWrapper>
+				<BaseSectionHeader>
+					<BaseSectionGroup>Our programs</BaseSectionGroup>
+					<BaseSectionTitle>Empowering Animal Welfare</BaseSectionTitle>
+					<BaseSectionSubtitle>
+						<h4>
+							We're committed to implementing innovative programs that address
+							the diverse needs of animals in our community. From low-cost spay
+							and neuter clinics to educational outreach initiatives, our
+							programs are designed to make a lasting impact on animal welfare.
+							Explore how our programs are revolutionizing the way we care for
+							and advocate on behalf of animals in need. Join us in our mission
+							to create a world where every animal is valued and protected.
+						</h4>
+					</BaseSectionSubtitle>
 
 					<Button>
 						Get Involved{' '}
@@ -239,7 +233,7 @@ const HomePage: NextPage = () => {
 							<ArrowRight size={12} />
 						</div>
 					</Button>
-				</div>
+				</BaseSectionHeader>
 
 				<ul className='flex flex-col gap-5'>
 					<li>
@@ -262,7 +256,7 @@ const HomePage: NextPage = () => {
 						/>
 					</li>
 				</ul>
-			</section>
+			</BaseSectionWrapper>
 		</div>
 	)
 }
