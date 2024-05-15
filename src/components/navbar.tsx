@@ -6,6 +6,7 @@ import {
 	AccordionTrigger,
 } from './shadcui/accordion'
 import Logo from './logo'
+import Link from 'next/link'
 
 const Navbar: React.FC = () => {
 	return (
@@ -26,7 +27,9 @@ const Navbar: React.FC = () => {
 				<AccordionContent>
 					{/* TODO Add Nav tag */}
 					<ul className='flex flex-col gap-4 px-4 text-base font-medium text-green-800'>
-						<li>About</li>
+						<li>
+							<Link href='/about'>About</Link>
+						</li>
 						<li>Adopt</li>
 						<li>Events</li>
 						<li>Contact</li>

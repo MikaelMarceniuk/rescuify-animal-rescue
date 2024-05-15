@@ -22,7 +22,7 @@ const BaseSectionTitle: React.FC<IBaseSectionTitleProps> = ({
 	return (
 		<AsTag
 			className={cn(
-				'text-4xl font-medium text-green-800',
+				'text-center text-4xl font-medium text-green-800',
 				availableVariants[variant],
 				className,
 			)}

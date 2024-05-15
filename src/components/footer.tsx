@@ -9,7 +9,9 @@ const Footer: React.FC = () => {
 			<Logo />
 
 			<ul className='flex flex-col gap-4 px-4 text-center text-base font-medium text-green-800'>
-				<li>About</li>
+				<li>
+					<Link href='/about'>About</Link>
+				</li>
 				<li>Adopt</li>
 				<li>Events</li>
 				<li>Contact</li>

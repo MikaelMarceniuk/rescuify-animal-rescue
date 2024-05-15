@@ -31,7 +31,7 @@ import { Separator } from '@/components/shadcui/separator'
 
 const HomePage: NextPage = () => {
 	return (
-		<div className='min-h-dvh'>
+		<main className='min-h-dvh'>
 			<BaseSectionWrapper>
 				<BaseSectionHeader>
 					<BaseSectionTitle variant='h2' as='h2'>
@@ -591,7 +591,7 @@ const HomePage: NextPage = () => {
 					</Button>
 				</BaseSectionHeader>
 			</BaseSectionWrapper>
-		</div>
+		</main>
 	)
 }
 
